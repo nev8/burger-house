@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+$crvena: #b44020;
+$braon: #3d2514;
+$fontSize: 16px;
+$fontFamily: 'Bebas Neue', cursive;
+$fontHeadings: 'Alfa Slab One', cursive;
+$fontOther: 'Montserrat', sans-serif;
+
+/****** Mixin ******/
+@mixin flex($justify, $align, $direction: row) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    direction: $direction;
+}
+
+/****** Basic styles ******/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fontHeadings;
+}
+
+/****** Header ******/
+header {
+    background-image: url(img/header-bg.jpg);
+    height: 120vh;
+    background-position: center;
+    background-size: cover;
+    nav {
+        @include flex(space-between, center);
+        article:first-child {
+            padding: 50px 0 0 50px;
+        }
+        article:last-child {
+            width: 45%;
+            margin: 50px 50px 0 0;
+            .delivery {
+                @include flex(space-between, center);
+                text-align: right;
+                img {
+                    padding-left: 300px;
+                }
+                p {
+                    font-family: $fontOther;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+               }
+            }
+            .navbar {
+                margin-top: 20px;
+                text-align: right;
+                padding-left: 50px;
+                a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                color: black;
+                letter-spacing: 4px;
+                margin-left: 65px;
+                font-family: $fontFamily;
+                &:hover {
+                    color: $crvena;
+                }
+                }
+
+            }
+        }
+    }
+    .meni {
+        @include flex(space-between, center);
+        text-transform: uppercase;
+         .all {
+            flex:0 0 45%;
+            // border: 1px solid blue;
+            height: 80vh;
+            margin-bottom: 450px;
+            div:first-child {
+                width: 80%;
+                padding-left: 50px;
+                padding-top: 200px;
+            h3 {
+                font-family: $fontFamily;
+                font-size: 1.3rem;
+                font-weight: 300;
+                padding: 10px 20px;
+                width: 450px;
+                border: 2px dashed $braon;
+                color: $braon;
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+             }
+            h1 {
+               font-size: 8rem; 
+               letter-spacing: 3px;
+               color: $braon;
+               text-shadow: 3px 3px 1px white;
+            }
+            h2 {
+               font-size: 4rem ;
+               letter-spacing: 3px;
+               color: $braon;
+               text-shadow: 3px 3px 1px white;
+            }
+            }
+            div:last-child {
+                
+            }
+         }
+        .image {
+            flex: 0 0 50%;
+            // border: 1px solid olivedrab;
+            
+            margin-bottom: 300px;
+            img {
+                width: 100%;
+                height: 100%;
+                
+                // border: 1px solid blue;
+            }
+        }
+    }
+    
+    
+  
+}
