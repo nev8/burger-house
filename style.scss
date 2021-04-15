@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 $crvena: #b44020;
 $braon: #3d2514;
+$zuta: #ffc657;
 $fontSize: 16px;
 $fontFamily: 'Bebas Neue', cursive;
 $fontHeadings: 'Alfa Slab One', cursive;
@@ -206,5 +207,32 @@ header {
                 line-height: .8;
             }
         }
+    }
+}
+/****** Heading ******/
+.heading {
+    text-align: center;
+    h4{
+        background-color: $zuta;
+        width: 180px;
+        padding: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: $fontFamily;
+        color: $braon;
+    }
+    h2 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $braon;
+        padding-bottom: 10px;
+    }
+    p {
+        font-family: $fontOther;
+        width: 80%;
+        margin: 0 auto;
     }
 }
