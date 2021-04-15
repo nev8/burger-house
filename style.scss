@@ -28,6 +28,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $fontHeadings;
 }
+.container {
+    width: 90%;
+    margin: auto;
+}
 
 /****** Header ******/
 header {
@@ -128,7 +132,79 @@ header {
             }
         }
     }
-    
-    
-  
+}
+
+/****** Banner ******/
+.banner {
+    @include flex(space-between, center);
+    height: 80vh;
+    article:first-child {
+        flex: 0 0 48%;
+        background-image: url(img/BurgerImage.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 80%;
+        width: 90%;
+        color: white;
+        h4 {
+            font-family: $fontFamily;
+            font-size: 1.3rem;
+            padding: 30px 0 0 30px;
+            letter-spacing: 2px;
+        }
+        h3 {
+            padding-left: 30px;
+            text-transform: uppercase;
+            font-family: $fontFamily;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            line-height: .8;
+        }
+    }
+    article:last-child {
+        flex: 0 0 48%;
+        div:first-child {
+            height: 215px;
+            margin-bottom: 30px;
+            background-image: url(img/Burger2.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 5px;
+            color: white;
+            padding: 30px 0 0 30px;
+            text-transform: uppercase;
+            h4 {
+                font-family: $fontFamily;
+                font-size: 1.3rem; 
+                letter-spacing: 1px;
+            }
+            h3 {
+                font-family: $fontFamily;
+                font-size: 2rem;
+                letter-spacing: 1px;
+                line-height: .9;
+            }
+        }
+        div:last-child {
+            height: 215px;
+            background-image: url(img/Burger3.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 5px;
+            color: white;
+            padding: 30px 0 0 30px;
+            text-transform: uppercase;
+            h4 {
+                font-family: $fontFamily;
+                font-size: 1.3rem; 
+                letter-spacing: 1px;
+            }
+            h3 {
+                font-family: $fontFamily;
+                font-size: 2rem;
+                letter-spacing: 1px;
+                line-height: .8;
+            }
+        }
+    }
 }
