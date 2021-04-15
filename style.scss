@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
-$crvena: #b44020;
+$crvena: #bf2222;
 $braon: #3d2514;
 $zuta: #ffc657;
 $fontSize: 16px;
@@ -234,5 +234,34 @@ header {
         font-family: $fontOther;
         width: 80%;
         margin: 0 auto;
+    }
+}
+/****** Mnei ******/
+.meni {
+    @include flex(space-between, center);
+    padding: 60px 0;
+    article {
+        flex: 1;
+        text-align: center;
+        h2 {
+            font-family: $fontFamily;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: $fontOther;
+            width: 70%;
+            margin: 0 auto;
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+        button {
+            padding: 15px 40px;
+            background-color: $crvena;
+            color: white;
+            border: none;
+            text-transform: uppercase;
+            font-family: $fontHeadings;
+        }
     }
 }

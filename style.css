@@ -97,7 +97,7 @@ header nav article:last-child .navbar a {
 }
 
 header nav article:last-child .navbar a:hover {
-  color: #b44020;
+  color: #bf2222;
 }
 
 header .meni {
@@ -297,5 +297,52 @@ header .meni .image img {
   font-family: "Montserrat", sans-serif;
   width: 80%;
   margin: 0 auto;
+}
+
+/****** Mnei ******/
+.meni {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: row;
+  padding: 60px 0;
+}
+
+.meni article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.meni article h2 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.meni article p {
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.meni article button {
+  padding: 15px 40px;
+  background-color: #bf2222;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
 }
 /*# sourceMappingURL=style.css.map */
