@@ -407,4 +407,119 @@ header .meni .image img {
   width: 100%;
   height: 100%;
 }
+
+/****** Reservation ******/
+.resertvation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: row;
+}
+
+.resertvation .pic1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22.5%;
+          flex: 0 0 22.5%;
+}
+
+.resertvation .pic1 img:first-child {
+  width: 100%;
+}
+
+.resertvation .pic1 img:last-child {
+  width: 90%;
+}
+
+.resertvation .form {
+  padding-top: 150px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 55%;
+          flex: 0 0 55%;
+  height: 120vh;
+}
+
+.resertvation .form .headings {
+  padding: 10px 30px;
+}
+
+.resertvation .form .headings h4 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: #3d2514;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.resertvation .form .headings h2 {
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #3d2514;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resertvation .form .forma {
+  margin-top: 20px;
+}
+
+.resertvation .form .forma form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: row;
+}
+
+.resertvation .form .forma form input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  padding: 20px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  border: none;
+  border: 1px solid gray;
+}
+
+.resertvation .form .forma form button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  padding: 20px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  border: none;
+  background: #bf2222;
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+}
+
+.resertvation .pic2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22.5%;
+          flex: 0 0 22.5%;
+}
+
+.resertvation .pic2 img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
